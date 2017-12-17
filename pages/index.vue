@@ -16,17 +16,17 @@ export default {
     let {data} = await axios.get(`${env.cockpit.apiUrl}/collections/get/Post?token=${env.cockpit.apiToken}`)
 
     let posts = await Promise.all(await data.map(async (p) => {
-      let result = await axios.post(`${env.cockpit.apiUrl}/mediamanager/images?token=${env.cockpit.apiToken}`, {
-        images: [p.Image],
-        w: 300,
-        h: 300,
-        options: {
-          quality: 80,
-          mode: 'resize'
-        }
-      })
-
-      p.ImageUrl = `${env.cockpit.baseUrl}${result.data[p.Image]}`
+      // let result = await axios.post(`${env.cockpit.apiUrl}/mediamanager/images?token=${env.cockpit.apiToken}`, {
+      //   images: [p.Image],
+      //   w: 300,
+      //   h: 300,
+      //   options: {
+      //     quality: 80,
+      //     mode: 'resize'
+      //   }
+      // })
+      //
+      // p.ImageUrl = `${env.cockpit.baseUrl}${result.data[p.Image]}`
       return p
     }))
 
