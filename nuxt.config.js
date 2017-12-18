@@ -18,7 +18,7 @@ module.exports = {
     cockpit: {
       apiUrl: 'https://watermelon-inspo.azurewebsites.net/cockpit/index.php/rest/api',
       apiToken: '257dd8c34e114aa0498e1338',
-      baseUrl: 'https://watermelon-inspo.azurewebsites.net/cockpit/'
+      baseUrl: 'https://watermelon-inspo.azurewebsites.net/'
     }
   },
   /*
