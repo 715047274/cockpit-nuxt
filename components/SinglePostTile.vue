@@ -2,7 +2,7 @@
   <div class="card">
     <header class="card-header">
       <div class="card-header-title is-centered">
-          {{ post.Title }}
+          {{ post.TItle }}
       </div>
     </header>
 
@@ -11,8 +11,7 @@
     </div>
 
     <div class="card-content">
-      <div class="content">
-        {{ post.Content }}
+      <div class="content" v-html="post.Content">
       </div>
     </div>
 
