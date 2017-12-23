@@ -1,6 +1,35 @@
 <template>
   <div>
-    <nuxt/>
+    <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
+      <div class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item">
+              Home
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Films
+              </a>
+
+              <div class="navbar-dropdown is-right is-boxed">
+                <a class="navbar-item">
+                  Princess Mononoke
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <button class="button navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+      <hr class="navbar-divider">
+
+    <div class="body">
+      <nuxt/>
+    </div>
   </div>
 </template>
 
@@ -14,6 +43,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+.body{
+  padding: 1.5em;
+  padding-top: 4em;
 }
 
 *, *:before, *:after {
@@ -50,3 +83,6 @@ html {
   background-color: #35495e;
 }
 </style>
+<script>
+
+</script>
