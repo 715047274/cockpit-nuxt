@@ -21,10 +21,10 @@ export default {
     let posts = await Promise.all(await data.map(async (p) => {
       let result = await axios.post(`${env.cockpit.apiUrl}/mediamanager/thumbnails?token=${env.cockpit.apiToken}`, {
         images: [p.Image],
-        w: 300,
-        h: 300,
+        w: 700,
+        h: 500,
         options: {
-          quality: 200,
+          quality: 150,
           mode: 'crop'
         }
       })

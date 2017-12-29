@@ -47,6 +47,8 @@ html {
 .body{
   padding: 1.5em;
   padding-top: 4em;
+  width:90%;
+  margin:0 auto;
 }
 
 *, *:before, *:after {
